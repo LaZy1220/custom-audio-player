@@ -77,6 +77,7 @@ function setProgress(e) {
   const width = this.clientWidth;
   const click = e.offsetX;
   const duration = audio.duration;
+  console.log(width, click, duration);
   audio.currentTime = (click / width) * duration;
 }
 progressContainer.addEventListener("click", setProgress);
